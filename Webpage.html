@@ -1,0 +1,19 @@
+<h2> Date & time</h2>
+<p id="date-time"></p>
+<script>
+    var today = new Date();
+    var day = today.getDate();
+    var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var date = today.getDate();
+    var dayName = daylist[today.getDay()];
+    var month = today.getMonth() + 1;
+    var year = today.getFullYear();
+    var hour = today.getHours();
+    var minutes = today.getMinutes();
+    var seconds = today.getSeconds();
+    console.log("Today is : " + dayName + ".");
+    console.log("Current time is : " + hour + " : " + minutes + " : " + seconds);
+    console.log("Date is : " + date + " - " + month + " - " + year);
+    document.getElementById("date-time").innerHTML = "Today is : " + dayName + ".<br>Current time is : " 
+    + hour + " : " + minutes + " : " + seconds + "<br>Date is : " + date + " - " + month + " - " + year;
+</script>

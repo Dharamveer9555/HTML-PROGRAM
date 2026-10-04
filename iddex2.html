@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RESPONSIVE COLLAGE WEBSITE</title>
+        <META NAME = "VIEWPORT" CONTENT = "WIDTH = DEVICE-WIDTH, INITIAL-SCALE = 1.0">
+            <Style>
+                {
+                    box - sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+                body {
+                    font-family : Arial, sans-serif;
+                    line-height : 1.6;
+                }
+                header {
+                    background-color : #333;
+                    color : #fff;
+                    padding : 25px;
+                    text-align : center;
+                    nav a {
+                        color : #fff;
+                        text-decoration : none;
+                        padding : 10px 15px;
+                    }
+                    nav a:hover {
+                        background-color : #555;
+                    }
+                    container{
+                        display : flex;
+                        flex-wrap : wrap;
+                        padding : 20px;
+                        gap : 20px;
+                    }
+                    footer {
+                        background-color : #333;
+                        color : #fff;
+                        text-align : center;
+                        padding : 15px;
+                    }
+                    @media (max-width: 768px) {
+                        nav{
+                            flex-direction : column;
+                            text-align : center;
+                        }
+                        nav a {
+                            border-bottom : 1px solid #fff;
+                        }
+                        container {
+                            flex-direction : column;
+                        }
+                }
+            </Style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Our College</h1>
+            <p>Welcome to our responsive college website. Explore our programs, events, and campus life.</p>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Programs</a>
+                <a href="#">Events</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="content">
+                <section class="content">
+                    <h2>About Our College</h2>
+                    <p> IMS ENGINEERING COLLEGE PROVIDES QUALITY EDUCATION AND EXCELLENCE IN ENGINEERING.</p>
+                </section>
+            </div>
+        </header>
